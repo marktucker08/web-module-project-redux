@@ -5,7 +5,8 @@ import { deleteMovie } from '../actions/movieActions';
 
 const mapStateToProps = state => {
     return {
-        movies: state.movies
+        movies: state.movieReducer.movies,
+        displayFavorites: state.favoritesReducer.displayFavorites
     }
 }
 
